@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="SelfStats is a simple personal analytics home page for tracking habits, goals, and weekly progress."
+    >
+    <title>SelfStats</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="SelfStats home">
+        <span class="brand-mark" aria-hidden="true">S</span>
+        <span>SelfStats</span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#focus">Focus</a>
+        <a href="#rhythm">Rhythm</a>
+        <a href="#start">Start</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-content">
+          <p class="eyebrow">Personal analytics, kept simple</p>
+          <h1 id="hero-title">SelfStats</h1>
+          <p class="hero-copy">
+            A clean place to notice your patterns, compare the week, and keep the
+            numbers that matter in view.
+          </p>
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="button button-primary" href="#start">Start simple</a>
+            <a class="button button-secondary" href="#focus">See the layout</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="focus" aria-labelledby="focus-title">
+        <div class="section-heading">
+          <p class="eyebrow">What to track</p>
+          <h2 id="focus-title">Build around a few useful numbers.</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <span class="feature-kicker">Health</span>
+            <h3>Energy and sleep</h3>
+            <p>Keep quick notes on rest, workouts, and recovery without adding friction.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-kicker">Work</span>
+            <h3>Deep work blocks</h3>
+            <p>Track focused sessions and compare how your schedule shapes the results.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-kicker">Life</span>
+            <h3>Habits and moods</h3>
+            <p>Spot useful trends by logging small signals the same way each day.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-split" id="rhythm" aria-labelledby="rhythm-title">
+        <div>
+          <p class="eyebrow">Weekly rhythm</p>
+          <h2 id="rhythm-title">Review once, adjust lightly.</h2>
+          <p>
+            The simplest version is a weekly check-in: choose three metrics, add
+            short context, and decide what to keep, change, or ignore.
+          </p>
+        </div>
+        <div class="stat-panel" aria-label="Example weekly summary">
+          <div class="stat-row">
+            <span>Sleep average</span>
+            <strong>7.4h</strong>
+          </div>
+          <div class="meter" aria-hidden="true"><span style="width: 74%"></span></div>
+          <div class="stat-row">
+            <span>Deep work</span>
+            <strong>11.5h</strong>
+          </div>
+          <div class="meter meter-coral" aria-hidden="true"><span style="width: 62%"></span></div>
+          <div class="stat-row">
+            <span>Habit streak</span>
+            <strong>5 days</strong>
+          </div>
+          <div class="meter meter-gold" aria-hidden="true"><span style="width: 83%"></span></div>
+        </div>
+      </section>
+
+      <section class="section callout" id="start" aria-labelledby="start-title">
+        <div>
+          <p class="eyebrow">GitHub Pages ready</p>
+          <h2 id="start-title">Publish this as a static website.</h2>
+          <p>
+            Edit the text, commit the files, push them to GitHub, and point
+            GitHub Pages at the main branch root.
+          </p>
+        </div>
+        <a class="button button-primary" href="https://pages.github.com/" rel="noreferrer">GitHub Pages</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>SelfStats</span>
+      <span>Updated <time id="updated-year"></time></span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
