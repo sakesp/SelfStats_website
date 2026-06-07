@@ -5,107 +5,181 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta
       name="description"
-      content="SelfStats is a simple personal analytics home page for tracking habits, goals, and weekly progress."
+      content="SelfStats is a simple iPhone app for tracking personal stats like workouts, miles run, pushups, hikes, habits, and other things you want to count over time."
     >
     <title>SelfStats</title>
+    <link rel="icon" type="image/png" href="assets/selfstats-icon.png">
+    <link rel="apple-touch-icon" href="assets/selfstats-icon.png">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="SelfStats home">
-        <span class="brand-mark" aria-hidden="true">S</span>
+      <a class="brand" href="index.html" aria-label="SelfStats home">
+        <img src="assets/selfstats-icon.png" alt="" width="40" height="40">
         <span>SelfStats</span>
       </a>
       <nav class="site-nav" aria-label="Main navigation">
-        <a href="#focus">Focus</a>
-        <a href="#rhythm">Rhythm</a>
-        <a href="#start">Start</a>
+        <a href="#track">Track</a>
+        <a href="#details">Details</a>
+        <a href="#data">Data</a>
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy</a>
       </nav>
     </header>
 
     <main id="top">
       <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-shot" aria-hidden="true">
+          <img src="assets/selfstats-screenshot.png" alt="" width="1206" height="2622">
+        </div>
         <div class="hero-content">
-          <p class="eyebrow">Personal analytics, kept simple</p>
+          <img class="hero-icon" src="assets/selfstats-icon.png" alt="" width="1024" height="1024">
+          <p class="eyebrow">Simple iPhone stat tracking</p>
           <h1 id="hero-title">SelfStats</h1>
           <p class="hero-copy">
-            A clean place to notice your patterns, compare the week, and keep the
-            numbers that matter in view.
+            Keep score of the things you want to do more often. Workouts, miles
+            run, pushups, hikes, habits, books, practice sessions, or anything
+            else you want credit for.
           </p>
           <div class="hero-actions" aria-label="Primary actions">
-            <a class="button button-primary" href="#start">Start simple</a>
-            <a class="button button-secondary" href="#focus">See the layout</a>
+            <a class="button button-primary" href="#track">See what it tracks</a>
+            <a class="button button-secondary" href="#data">Your data</a>
           </div>
+          <p class="hero-note">
+            No accounts. No social feed. Just your own personal stat sheet.
+          </p>
         </div>
       </section>
 
-      <section class="section" id="focus" aria-labelledby="focus-title">
+      <section class="section intro" aria-labelledby="intro-title">
+        <p class="eyebrow">Keep your own stats</p>
+        <h2 id="intro-title">Like the back of a baseball card, but for yourself.</h2>
+        <p>
+          SelfStats gives you a durable record of the things you do. Tap to add
+          to a stat, check off a habit, or enter a number. Over time, your
+          everyday actions turn into totals, streaks, rates, and year-by-year
+          stats you can actually look back on.
+        </p>
+        <ul class="tag-list" aria-label="Example stats">
+          <li>Run miles</li>
+          <li>Pushups</li>
+          <li>Hikes</li>
+          <li>Workouts</li>
+          <li>Habits</li>
+          <li>Books</li>
+        </ul>
+      </section>
+
+      <section class="section" id="track" aria-labelledby="track-title">
         <div class="section-heading">
-          <p class="eyebrow">What to track</p>
-          <h2 id="focus-title">Build around a few useful numbers.</h2>
+          <p class="eyebrow">Simple tracking</p>
+          <h2 id="track-title">Quick entries from the main screen.</h2>
+          <p>
+            Open the app, tap the stat, and get on with your day. SelfStats is
+            built for low-friction logging, not long setup flows.
+          </p>
         </div>
         <div class="feature-grid">
           <article class="feature-card">
-            <span class="feature-kicker">Health</span>
-            <h3>Energy and sleep</h3>
-            <p>Keep quick notes on rest, workouts, and recovery without adding friction.</p>
+            <span class="feature-kicker">Counting stats</span>
+            <h3>Tap a button to make a number go up or down.</h3>
+            <p>
+              Count pushups, situps, workouts, books read, practice sessions,
+              or anything else that works as a running total.
+            </p>
           </article>
           <article class="feature-card">
-            <span class="feature-kicker">Work</span>
-            <h3>Deep work blocks</h3>
-            <p>Track focused sessions and compare how your schedule shapes the results.</p>
+            <span class="feature-kicker">Number-entry stats</span>
+            <h3>Enter values when the amount changes.</h3>
+            <p>
+              Track miles run, time spent, weight lifted, pages read, or other
+              stats where each entry should keep its own number.
+            </p>
           </article>
           <article class="feature-card">
-            <span class="feature-kicker">Life</span>
-            <h3>Habits and moods</h3>
-            <p>Spot useful trends by logging small signals the same way each day.</p>
+            <span class="feature-kicker">Checkbox stats</span>
+            <h3>Check off simple yes-or-no habits.</h3>
+            <p>
+              Use checkbox stats for habits you want to record once per day,
+              then see how often you kept them going.
+            </p>
           </article>
         </div>
       </section>
 
-      <section class="section section-split" id="rhythm" aria-labelledby="rhythm-title">
-        <div>
-          <p class="eyebrow">Weekly rhythm</p>
-          <h2 id="rhythm-title">Review once, adjust lightly.</h2>
+      <section class="section app-section" id="details" aria-labelledby="details-title">
+        <div class="app-copy">
+          <p class="eyebrow">Themes, totals, and details</p>
+          <h2 id="details-title">Organize your stats and see the numbers build.</h2>
           <p>
-            The simplest version is a weekly check-in: choose three metrics, add
-            short context, and decide what to keep, change, or ignore.
+            Group stats into themes like Fitness, Habits, Hiking, Reading, or
+            anything else you want to track. The totals view gives you a quick,
+            customizable overview, and each stat has its own detail page.
           </p>
+          <div class="detail-list">
+            <div>
+              <h3>Totals view</h3>
+              <p>Choose the stats you want in view and scan your progress quickly.</p>
+            </div>
+            <div>
+              <h3>Stat detail pages</h3>
+              <p>Review streaks, rates, history, and year-by-year progress.</p>
+            </div>
+            <div>
+              <h3>Adjustments and edits</h3>
+              <p>Tap into a stat when you need to correct, adjust, or review entries.</p>
+            </div>
+          </div>
         </div>
-        <div class="stat-panel" aria-label="Example weekly summary">
-          <div class="stat-row">
-            <span>Sleep average</span>
-            <strong>7.4h</strong>
-          </div>
-          <div class="meter" aria-hidden="true"><span style="width: 74%"></span></div>
-          <div class="stat-row">
-            <span>Deep work</span>
-            <strong>11.5h</strong>
-          </div>
-          <div class="meter meter-coral" aria-hidden="true"><span style="width: 62%"></span></div>
-          <div class="stat-row">
-            <span>Habit streak</span>
-            <strong>5 days</strong>
-          </div>
-          <div class="meter meter-gold" aria-hidden="true"><span style="width: 83%"></span></div>
-        </div>
+        <figure class="phone-figure">
+          <img
+            src="assets/selfstats-screenshot.png"
+            alt="SelfStats showing a Fitness theme with Run Miles, Pushups, Situps, and Pull-Ups stat cards."
+            width="1206"
+            height="2622"
+            loading="lazy"
+          >
+          <figcaption>Fast stat entry, organized by theme.</figcaption>
+        </figure>
       </section>
 
-      <section class="section callout" id="start" aria-labelledby="start-title">
+      <section class="section data-section" id="data" aria-labelledby="data-title">
         <div>
-          <p class="eyebrow">GitHub Pages ready</p>
-          <h2 id="start-title">Publish this as a static website.</h2>
+          <p class="eyebrow">Your data belongs to you</p>
+          <h2 id="data-title">Useful inside the app, easy to take with you.</h2>
           <p>
-            Edit the text, commit the files, push them to GitHub, and point
-            GitHub Pages at the main branch root.
+            Your stats should not be trapped in an app. SelfStats lets you copy
+            and paste stats into spreadsheets, export CSV files, and back up app
+            data as JSON.
           </p>
         </div>
-        <a class="button button-primary" href="https://pages.github.com/" rel="noreferrer">GitHub Pages</a>
+        <div class="data-grid">
+          <article class="data-card">
+            <h3>Spreadsheet friendly</h3>
+            <p>Copy and paste stats into a spreadsheet when you want to sort, chart, or archive them.</p>
+          </article>
+          <article class="data-card">
+            <h3>CSV export</h3>
+            <p>Export stat data as CSV files for your own records or analysis.</p>
+          </article>
+          <article class="data-card">
+            <h3>JSON backup</h3>
+            <p>Back up the app's data as JSON so you can keep a full copy.</p>
+          </article>
+          <article class="data-card">
+            <h3>Private by default</h3>
+            <p>SelfStats runs on your device and does not collect your personal data.</p>
+          </article>
+        </div>
       </section>
     </main>
 
     <footer class="site-footer">
       <span>SelfStats</span>
+      <nav aria-label="Footer navigation">
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
       <span>Updated <time id="updated-year"></time></span>
     </footer>
 

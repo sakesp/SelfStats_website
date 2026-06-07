@@ -4,10 +4,13 @@ A simple static website that can be published with GitHub Pages.
 
 ## Files
 
-- `index.html` is the page GitHub Pages will serve first.
+- `index.html` is the homepage GitHub Pages will serve first.
+- `support.html` is the small support page.
+- `privacy.html` is the small privacy policy page.
 - `styles.css` controls the layout and visual design.
 - `script.js` adds the current year in the footer.
-- `assets/selfstats-dashboard.png` is the hero background image.
+- `assets/selfstats-icon.png` is the app icon.
+- `assets/selfstats-screenshot.png` is the app screenshot used on the homepage.
 
 ## Publish With GitHub Pages
 
