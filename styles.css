@@ -452,6 +452,13 @@ h3 {
   margin-top: 0.45rem;
 }
 
+.page-content a {
+  color: var(--blue-dark);
+  font-weight: 750;
+  text-decoration: underline;
+  text-underline-offset: 0.16em;
+}
+
 .site-footer {
   display: flex;
   align-items: center;
